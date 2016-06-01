@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TRCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_homepage_CouponCategory" translatesAutoresizingMaskIntoConstraints="NO" id="If6-Mo-CZz">
+                        <rect key="frame" x="15" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="dBk-kT-JvT"/>
+                            <constraint firstAttribute="height" constant="30" id="w7w-LN-2Da"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-uz-VKR">
+                        <rect key="frame" x="0.0" y="40" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="TSf-Lr-SEl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="If6-Mo-CZz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="28n-Ai-lc8"/>
+                <constraint firstAttribute="bottom" secondItem="b2r-uz-VKR" secondAttribute="bottom" id="Ipc-3n-199"/>
+                <constraint firstItem="If6-Mo-CZz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Lzi-ro-Yi7"/>
+                <constraint firstItem="If6-Mo-CZz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="MCe-iq-7ec"/>
+                <constraint firstAttribute="trailing" secondItem="b2r-uz-VKR" secondAttribute="trailing" id="X0b-Sp-Clp"/>
+                <constraint firstItem="b2r-uz-VKR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sjq-VH-tuN"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MCe-iq-7ec"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cellImageView" destination="If6-Mo-CZz" id="eq2-DG-q1p"/>
+                <outlet property="cellLabel" destination="b2r-uz-VKR" id="uzd-57-Orq"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="161"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_homepage_CouponCategory" width="80" height="80"/>
+    </resources>
+</document>
